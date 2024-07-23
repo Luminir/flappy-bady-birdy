@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="BirdFlying.css">
+    <link rel="icon" type="image" href="img/bird2.png">
+    <title>Flappy Birdy</title>
+</head>
+<body>
+    <div class="background"></div>
+    <img src="img/mohawkBird1.png" alt="" id="bird-1" class="bird">
+    <div class="message">
+        Click Enter/Up to Start
+        <p>
+            <span style="color: rgb(0, 0, 0);">
+                <img src="img/upButton.png">
+            </span> 
+        ArrowUp to Control</p>
+        <button class="easy-mode" onclick="easyMode()">Easy</button>
+        <button class="medium-mode" onclick="mediumMode()">Medium</button>
+        <button class="hard-mode" onclick="hardMode()">Hard</button>
+    </div>
+    <div class="score">
+        <span class="score-title"></span>
+        <span class="score-value"></span>
+    </div>
+    <script src="BirdFlying.js"></script>
+</body>
+</html>

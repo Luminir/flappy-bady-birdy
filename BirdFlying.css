@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    background: url('img/backgroundImg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.bird{
+    height: 60px;
+    width: 90px;
+    position: fixed;
+    top: 40vh;
+    left: 30vh;
+    z-index: 100;
+}
+.pipe{
+    position: fixed;
+    top: 40vh;
+    left: 100vh;
+    height: 70vh;
+    width: 6vw;
+    background: radial-gradient(#5D2906 70%, #D4BB7E);
+    border: 5px solid black;
+}
+.message{
+    position: absolute;
+    z-index: 10;
+    color: black;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+}
+.message button{
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.easy-mode{
+    background-color: aqua;
+}
+.easy-mode:active{
+    transition: 0.5s;
+    background-color: rgb(4, 54, 54);
+}
+.medium-mode{
+    background-color: greenyellow;
+}
+.medium-mode:active{
+    transition: 0.5s;
+    background-color: green;
+}
+.hard-mode{
+    background-color: red;
+}
+.hard-mode:active{
+    transition: 0.5s;
+    background-color: rgb(126, 4, 4);
+}
+.message p span img{
+    width: 50px;
+}
+.messageStyle{
+    background: white;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5%;
+}
+.score{
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    font-weight: 100;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+.score-value{
+    color: goldenrod;
+    font-weight: bold;
+}
+@media screen and (max-width: 1078px){
+    .message{
+        font-size: 35px;
+        top:50%;
+        white-space: nowrap;
+    }
+    .message p span img{
+        width: 40px;
+    }
+    .score{
+        font-size: 8vh;
+    }
+    .bird{
+        width: 80px;
+        height: 55px;
+    }
+    .pipe{
+        width: 14vw;
+    }
+}
